@@ -1,6 +1,7 @@
-import Header from 'components/Header';
-import NoteForm from 'components/NoteForm';
-import NoteList from 'components/NoteList';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import NoteForm from './components/Noteform';
+import NoteList from './components/Notelist';
 import { useState} from 'react';
 
 function  App() {
@@ -18,6 +19,12 @@ function  App() {
     return (
         <div className="App">
             <Header />
+            <div className="d-flex">
+                <Sidebar />
+                <main className="flex-grow-1 p-4"/>
+                
+
+            </div>
         </div>
     );
 }
